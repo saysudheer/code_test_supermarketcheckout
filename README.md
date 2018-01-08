@@ -42,9 +42,9 @@ Additional notes:
 
 Prerequisites
 -------------- 
-Jdk 1.7, 
-Spring Boot, 
-Embeded MongoDB, 
+Jdk 1.7,<br> 
+Spring Boot, <br>
+Embeded MongoDB, <br>
 Maven
 
 Procedure to build and run
@@ -57,6 +57,8 @@ Procedure to build and run
 *Run mvn clean install or mvn clean package in the root directory(execute at the path of pom.xml)
 
 *To run: mvn spring-boot:run
+
+After launching application api can be tested by accessing swagger ui version or by testing API urls in postman or curl
 
 API
 ----
@@ -78,6 +80,7 @@ Request URL
 POST /supermarket/api/addtocart/items
 -------------------------------------
 * itemId should be from getitems.itemId()
+<br>
 Curl
 	curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' 'http://localhost:8080/supermarket/api/addtocart/items?itemId=1&quantity=10'
 

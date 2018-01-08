@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      port: 27017
+      database: checkoutdb
+      repositories:
+        enabled: true
+logging:
+  file: /supermarketcheckout.log
+  level:
+    org: 
+      springframework:
+        web : INFO
+    com:
+      supermarket: INFO          

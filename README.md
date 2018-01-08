@@ -63,6 +63,8 @@ API
 
 Swagger API docs are enabled and avaliable at UI version at :http://localhost:8080/swagger-ui.html
 
+<b>items-controller : Items Controller<b>
+
 GET /supermarket/api/getitems
 ------------------------------
 Curl
@@ -71,9 +73,11 @@ Curl
 Request URL
 	http://localhost:8080/supermarket/api/getitems
 
+<b>checkout-controller : Checkout Controller<b>
+
 POST /supermarket/api/addtocart/items
 -------------------------------------
-
+* itemId should be from getitems.itemId()
 Curl
 	curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' 'http://localhost:8080/supermarket/api/addtocart/items?itemId=1&quantity=10'
 
